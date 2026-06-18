@@ -63,7 +63,8 @@ El proyecto integra conceptos de modelado de procesos mediante BPMN 2.0, gestió
 * CSV (Base de datos simulada)
 * GitHub
 * BPMN 2.0
-* Draw.io / Bizagi Modeler
+* Draw.io
+* Bizagi Modeler
 * ChatGPT
 * Claude
 
@@ -90,20 +91,19 @@ TPI-Organizacion-Empresarial
 ├── README.md
 │
 ├── chatbot
-│   └── chatbot_vacaciones.py
+│   ├── chatbot_vacaciones.py
+│   └── empleados.csv
 │
 ├── base_datos
 │   ├── empleados.csv
 │   └── Base de datos original.xlsx
 │
-├── documentacion
-│   └── TPI_Organizacion_Empresarial.pdf
+├── capturas
+│   ├── Capturas IA - Chat GPT.pdf
+│   └── Pregunta Claude.pdf
 │
-└── capturas
-    ├── BPMN_AS_IS.png
-    ├── BPMN_TO_BE.png
-    ├── consultas_IA.png
-    └── repositorio_github.png
+└── documentacion
+    └── TPI_Organizacion_Empresarial.pdf
 ```
 
 ---
@@ -111,21 +111,24 @@ TPI-Organizacion-Empresarial
 # Ejecución del Proyecto
 
 1. Descargar o clonar el repositorio.
-2. Verificar que el archivo `empleados.csv` se encuentre dentro de la carpeta `base_datos`.
-3. Ejecutar el archivo:
+2. Abrir la carpeta `chatbot`.
+3. Verificar que el archivo `empleados.csv` se encuentre dentro de dicha carpeta.
+4. Ejecutar el programa con el siguiente comando:
 
 ```bash
 python chatbot_vacaciones.py
 ```
 
-4. Ingresar el número de legajo solicitado por el sistema.
-5. Seguir las instrucciones mostradas por el chatbot.
+5. Ingresar el número de legajo solicitado por el sistema.
+6. Seguir las instrucciones mostradas por el chatbot hasta completar la solicitud de vacaciones.
 
 ---
 
 # Base de Datos Simulada
 
 El sistema utiliza un archivo CSV denominado `empleados.csv` para almacenar la información de los empleados y sus días de vacaciones disponibles.
+
+El archivo se encuentra tanto en la carpeta `base_datos` como en la carpeta `chatbot`, con el objetivo de facilitar la ejecución del programa y conservar una copia de referencia dentro de los datos del proyecto.
 
 ### Campos principales
 
