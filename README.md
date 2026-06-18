@@ -5,9 +5,9 @@
 * Mayra Palacios
 * Ammiel Vainstein
 
-## Comisión
+## Comisiones
 
-15
+15 y 8
 
 ## Materia
 
