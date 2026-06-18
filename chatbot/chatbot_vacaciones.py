@@ -1,7 +1,7 @@
 #Cargar empleados desde el CSV
 def cargar_empleados():
     empleados = [] #Lista para almacenar los empleados
-    with open("base_datos/empleados.csv", "r", encoding="utf-8") as archivo: #Encoding para que lea las tildes
+    with open("../base_datos/empleados.csv", "r", encoding="utf-8") as archivo: #Encoding para que lea las tildes
         lineas = archivo.readlines() #Leemos todas las líneas del archivo y las guardamos en una lista
         for linea in lineas[1:]:  #Salteamos el encabezado
             partes = linea.strip().split(",") #Creamos una lista con los valores de cada línea.
